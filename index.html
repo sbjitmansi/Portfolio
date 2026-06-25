@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Mansi Sawarkar — Product Analyst</title>
+<title>Mansi Sawarkar — AI & ML Engineer</title>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet"/>
 <style>
   :root {
@@ -22,9 +22,7 @@
   }
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
   html { scroll-behavior: smooth; }
-
   body {
     background: var(--bg);
     color: var(--text);
@@ -33,7 +31,6 @@
     cursor: none;
   }
 
-  /* CUSTOM CURSOR */
   .cursor {
     position: fixed;
     width: 10px; height: 10px;
@@ -56,7 +53,6 @@
     transition: transform 0.15s ease, width 0.3s, height 0.3s;
   }
 
-  /* NOISE OVERLAY */
   body::before {
     content: '';
     position: fixed;
@@ -66,8 +62,6 @@
     z-index: 0;
     opacity: 0.4;
   }
-
-  /* GRID BG */
   body::after {
     content: '';
     position: fixed;
@@ -80,7 +74,6 @@
     z-index: 0;
   }
 
-  /* NAV */
   nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -119,10 +112,8 @@
   }
   .nav-links a:hover { color: var(--text); }
 
-  /* SECTIONS */
   section { position: relative; z-index: 1; }
 
-  /* HERO */
   #hero {
     min-height: 100vh;
     display: flex;
@@ -132,7 +123,6 @@
     position: relative;
     overflow: hidden;
   }
-
   .hero-glow {
     position: absolute;
     width: 600px; height: 600px;
@@ -151,7 +141,6 @@
     pointer-events: none;
     animation: pulse 8s ease-in-out infinite reverse;
   }
-
   @keyframes pulse {
     0%, 100% { transform: scale(1); opacity: 1; }
     50% { transform: scale(1.1); opacity: 0.7; }
@@ -201,18 +190,14 @@
   }
 
   .hero-desc {
-    max-width: 520px;
+    max-width: 580px;
     font-size: 1rem;
     line-height: 1.7;
     color: var(--muted);
     margin-bottom: 44px;
   }
 
-  .hero-cta {
-    display: flex;
-    gap: 16px;
-    flex-wrap: wrap;
-  }
+  .hero-cta { display: flex; gap: 16px; flex-wrap: wrap; }
   .btn-primary {
     display: inline-flex;
     align-items: center;
@@ -261,7 +246,6 @@
     padding-top: 40px;
     border-top: 1px solid var(--border);
   }
-  .stat-item { }
   .stat-num {
     font-family: var(--display);
     font-size: 2rem;
@@ -278,7 +262,6 @@
     margin-top: 4px;
   }
 
-  /* SECTION COMMON */
   .section-wrap {
     padding: 100px 60px;
     max-width: 1200px;
@@ -311,7 +294,6 @@
     line-height: 1.1;
   }
 
-  /* ABOUT */
   #about { background: var(--bg2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
   .about-grid {
     display: grid;
@@ -340,11 +322,7 @@
     color: var(--glow);
     line-height: 1.6;
   }
-  .about-badges {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
+  .about-badges { display: flex; flex-direction: column; gap: 16px; }
   .badge-row {
     display: flex;
     align-items: center;
@@ -370,7 +348,6 @@
     font-size: 1.1rem;
     flex-shrink: 0;
   }
-  .badge-info { }
   .badge-title {
     font-family: var(--display);
     font-size: 0.95rem;
@@ -384,7 +361,6 @@
     margin-top: 2px;
   }
 
-  /* SKILLS */
   .skills-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -428,11 +404,7 @@
     color: var(--text);
     margin-bottom: 16px;
   }
-  .skill-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-  }
+  .skill-tags { display: flex; flex-wrap: wrap; gap: 6px; }
   .skill-tag {
     font-family: var(--mono);
     font-size: 0.68rem;
@@ -443,7 +415,6 @@
     border-radius: 3px;
   }
 
-  /* EXPERIENCE */
   #experience { background: var(--bg2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
   .exp-card {
     padding: 40px;
@@ -490,12 +461,7 @@
     border-radius: 4px;
     white-space: nowrap;
   }
-  .exp-bullets {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
+  .exp-bullets { list-style: none; display: flex; flex-direction: column; gap: 12px; }
   .exp-bullets li {
     display: flex;
     gap: 14px;
@@ -512,7 +478,6 @@
   }
   .exp-bullets li strong { color: var(--text); font-weight: 600; }
 
-  /* PROJECTS */
   .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
@@ -577,12 +542,7 @@
     margin-bottom: 20px;
     flex: 1;
   }
-  .project-stack {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-    margin-top: auto;
-  }
+  .project-stack { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; }
   .stack-tag {
     font-family: var(--mono);
     font-size: 0.65rem;
@@ -593,7 +553,6 @@
     border-radius: 3px;
   }
 
-  /* CERTIFICATIONS */
   #certifications { background: var(--bg2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
   .certs-grid {
     display: grid;
@@ -610,10 +569,7 @@
     align-items: flex-start;
     transition: all 0.25s;
   }
-  .cert-card:hover {
-    border-color: rgba(0,180,255,0.25);
-    transform: translateY(-2px);
-  }
+  .cert-card:hover { border-color: rgba(0,180,255,0.25); transform: translateY(-2px); }
   .cert-dot {
     width: 8px; height: 8px;
     border-radius: 50%;
@@ -622,25 +578,10 @@
     margin-top: 6px;
     flex-shrink: 0;
   }
-  .cert-name {
-    font-size: 0.88rem;
-    font-weight: 600;
-    color: var(--text);
-    line-height: 1.4;
-  }
-  .cert-org {
-    font-family: var(--mono);
-    font-size: 0.7rem;
-    color: var(--muted);
-    margin-top: 4px;
-  }
+  .cert-name { font-size: 0.88rem; font-weight: 600; color: var(--text); line-height: 1.4; }
+  .cert-org { font-family: var(--mono); font-size: 0.7rem; color: var(--muted); margin-top: 4px; }
 
-  /* ACHIEVEMENTS */
-  .achievements-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
+  .achievements-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
   .achievement-card {
     padding: 28px;
     background: var(--card);
@@ -654,33 +595,12 @@
     border-color: rgba(0,180,255,0.25);
     box-shadow: 0 8px 30px rgba(0,180,255,0.06);
   }
-  .ach-icon {
-    font-size: 1.8rem;
-    flex-shrink: 0;
-  }
-  .ach-title {
-    font-family: var(--display);
-    font-size: 1rem;
-    font-weight: 700;
-    color: var(--text);
-    margin-bottom: 6px;
-  }
-  .ach-desc {
-    font-size: 0.87rem;
-    line-height: 1.6;
-    color: var(--muted);
-  }
+  .ach-icon { font-size: 1.8rem; flex-shrink: 0; }
+  .ach-title { font-family: var(--display); font-size: 1rem; font-weight: 700; color: var(--text); margin-bottom: 6px; }
+  .ach-desc { font-size: 0.87rem; line-height: 1.6; color: var(--muted); }
 
-  /* CONTACT */
-  #contact {
-    text-align: center;
-    background: var(--bg);
-  }
-  .contact-wrap {
-    padding: 100px 60px;
-    max-width: 700px;
-    margin: 0 auto;
-  }
+  #contact { text-align: center; background: var(--bg); }
+  .contact-wrap { padding: 100px 60px; max-width: 700px; margin: 0 auto; }
   .contact-title {
     font-family: var(--display);
     font-size: clamp(2.5rem, 5vw, 4rem);
@@ -690,12 +610,7 @@
     line-height: 1.05;
   }
   .contact-title span { color: var(--glow); }
-  .contact-sub {
-    font-size: 1rem;
-    color: var(--muted);
-    line-height: 1.7;
-    margin-bottom: 40px;
-  }
+  .contact-sub { font-size: 1rem; color: var(--muted); line-height: 1.7; margin-bottom: 40px; }
   .contact-links {
     display: flex;
     gap: 16px;
@@ -724,31 +639,14 @@
     transform: translateY(-2px);
     box-shadow: 0 0 20px rgba(0,180,255,0.1);
   }
-  .footer-mono {
-    font-family: var(--mono);
-    font-size: 0.72rem;
-    color: rgba(122,155,191,0.4);
-    letter-spacing: 0.1em;
-  }
+  .footer-mono { font-family: var(--mono); font-size: 0.72rem; color: rgba(122,155,191,0.4); letter-spacing: 0.1em; }
 
-  /* SCROLL REVEAL */
   .reveal {
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.7s ease, transform 0.7s ease;
   }
-  .reveal.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  /* TYPING */
-  .typed::after {
-    content: '|';
-    animation: blink 0.8s step-end infinite;
-    color: var(--glow);
-  }
-  @keyframes blink { 50% { opacity: 0; } }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
 
   @media (max-width: 768px) {
     nav { padding: 16px 24px; }
@@ -787,21 +685,21 @@
   <div class="hero-glow"></div>
   <div class="hero-glow2"></div>
 
-  <div class="hero-tag">Available for full-time roles</div>
+  <div class="hero-tag">B.Tech Final Year Student · AI & ML</div>
 
   <h1>
     <span class="name-first">Mansi</span>
     <span class="name-last">Sawarkar</span>
   </h1>
 
-  <div class="hero-role">Product Analyst · Data Analytics · AI &amp; ML</div>
+  <div class="hero-role">AI & ML · Data Analytics · Cloud Computing</div>
 
   <p class="hero-desc">
-    B.Tech in AI &amp; ML (GPA 9.2/10). I turn data into decisions — defining KPIs, analysing user behaviour, and building ML-powered product features that move metrics that matter.
+    Final-year B.Tech student specialising in Artificial Intelligence & Machine Learning, eager to begin my career as a Graduate or Management Trainee. Passionate about combining technical expertise, analytical thinking, and problem-solving with team collaboration and leadership to contribute to organisational growth.
   </p>
 
   <div class="hero-cta">
-    <a href="mailto:mansisawarkar98@gmail.com" class="btn-primary">→ Get in touch</a>
+    <a href="mailto:sawarkarm102@gmail.com" class="btn-primary">→ Get in touch</a>
     <a href="#projects" class="btn-outline">↓ View my work</a>
   </div>
 
@@ -811,12 +709,12 @@
       <div class="stat-label">GPA / 10</div>
     </div>
     <div class="stat-item">
-      <div class="stat-num">11+</div>
+      <div class="stat-num">4+</div>
       <div class="stat-label">Certifications</div>
     </div>
     <div class="stat-item">
       <div class="stat-num">3+</div>
-      <div class="stat-label">AI Products Built</div>
+      <div class="stat-label">AI Projects Built</div>
     </div>
     <div class="stat-item">
       <div class="stat-num">'24</div>
@@ -829,29 +727,29 @@
 <section id="about">
   <div class="section-wrap">
     <div class="section-label">Who I am</div>
-    <h2 class="section-title reveal">Analyst by thinking.<br>Engineer by training.</h2>
+    <h2 class="section-title reveal">Engineer by training.<br>Problem-solver by nature.</h2>
     <div class="about-grid">
       <div class="about-text reveal">
-        <p>I'm a <strong>final-year B.Tech student</strong> specialising in AI &amp; ML, passionate about the intersection of data, product, and user experience. I believe great product decisions are built on evidence — not gut feel.</p>
-        <p>I've built AI products end-to-end: from scoping requirements and defining KPIs to building ML pipelines and delivering full-stack applications that real users interact with.</p>
-        <p>I'm a <strong>Smart India Hackathon 2024 Finalist</strong> and TCS CodeVita qualifier — and I'm actively looking to bring this energy to a product analyst role where data drives growth.</p>
+        <p>I'm a <strong>final-year B.Tech student</strong> specialising in AI & ML at S.B. Jain Institute of Technology Management and Research, Nagpur. I love learning new technologies and applying them through real-world projects.</p>
+        <p>I've built AI products end-to-end — from data pipelines and ML models to full-stack web applications. I'm passionate about combining technical expertise with analytical thinking to build practical and meaningful solutions.</p>
+        <p>I'm a <strong>Smart India Hackathon 2024 Finalist</strong> and TCS CodeVita qualifier, actively seeking opportunities to learn, adapt, and add value in a dynamic and growth-oriented environment.</p>
         <div class="about-highlight">
-          <p>📍 Nagpur, Maharashtra &nbsp;·&nbsp; Open to remote &amp; relocation<br/>✉️ mansisawarkar98@gmail.com &nbsp;·&nbsp; +91-9322812158</p>
+          <p>📍 Nagpur, Maharashtra, 440032 · Open to remote & relocation<br/>✉️ sawarkarm102@gmail.com · 📞 +91-9322812158</p>
         </div>
       </div>
       <div class="about-badges reveal">
         <div class="badge-row">
           <div class="badge-icon">🎓</div>
           <div class="badge-info">
-            <div class="badge-title">B.Tech — CSE (AI &amp; ML)</div>
-            <div class="badge-sub">S.B. Jain Institute · GPA 9.2/10 · 2022–Present</div>
+            <div class="badge-title">B.Tech — CSE (AI & ML)</div>
+            <div class="badge-sub">S.B. Jain Institute · GPA 9.2/10 · Nov 2022 – Present</div>
           </div>
         </div>
         <div class="badge-row">
           <div class="badge-icon">💼</div>
           <div class="badge-info">
-            <div class="badge-title">AI Engineering Intern</div>
-            <div class="badge-sub">U2U Systems Pvt. Ltd. · May–Jul 2025</div>
+            <div class="badge-title">Intern — U2U Systems Pvt. Ltd.</div>
+            <div class="badge-sub">Nagpur · May 2025 – Jul 2025</div>
           </div>
         </div>
         <div class="badge-row">
@@ -864,8 +762,8 @@
         <div class="badge-row">
           <div class="badge-icon">☁️</div>
           <div class="badge-info">
-            <div class="badge-title">Oracle &amp; AWS Certified</div>
-            <div class="badge-sub">OCI AI, GenAI, Data Science · 11+ AWS certs</div>
+            <div class="badge-title">Oracle & AWS Certified</div>
+            <div class="badge-sub">OCI AI, GenAI, Data Science · AWS Educate</div>
           </div>
         </div>
       </div>
@@ -880,29 +778,21 @@
     <h2 class="section-title reveal">Core competencies</h2>
     <div class="skills-grid">
       <div class="skill-card reveal">
-        <div class="skill-cat">Product & Analytics</div>
-        <div class="skill-name">Product Thinking</div>
-        <div class="skill-tags">
-          <span class="skill-tag">KPI Definition</span>
-          <span class="skill-tag">A/B Testing</span>
-          <span class="skill-tag">User Funnel Analysis</span>
-          <span class="skill-tag">Requirements Gathering</span>
-          <span class="skill-tag">MS Excel</span>
-          <span class="skill-tag">Power BI</span>
-          <span class="skill-tag">Google Analytics</span>
-        </div>
-      </div>
-      <div class="skill-card reveal">
-        <div class="skill-cat">Programming & Data</div>
-        <div class="skill-name">Data Engineering</div>
+        <div class="skill-cat">Technical Skills</div>
+        <div class="skill-name">Programming</div>
         <div class="skill-tags">
           <span class="skill-tag">Python</span>
-          <span class="skill-tag">SQL</span>
-          <span class="skill-tag">Pandas</span>
-          <span class="skill-tag">NumPy</span>
-          <span class="skill-tag">Matplotlib</span>
-          <span class="skill-tag">Java</span>
+          <span class="skill-tag">HTML</span>
+          <span class="skill-tag">CSS</span>
           <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">C++</span>
+          <span class="skill-tag">Machine Learning</span>
+          <span class="skill-tag">Deep Learning</span>
+          <span class="skill-tag">Data Analytics</span>
+          <span class="skill-tag">Cloud Computing</span>
+          <span class="skill-tag">Linux</span>
+          <span class="skill-tag">DBMS</span>
+          <span class="skill-tag">Arduino</span>
         </div>
       </div>
       <div class="skill-card reveal">
@@ -915,6 +805,26 @@
           <span class="skill-tag">Deep Learning</span>
           <span class="skill-tag">NLP</span>
           <span class="skill-tag">Reinforcement Learning</span>
+          <span class="skill-tag">Pandas</span>
+          <span class="skill-tag">NumPy</span>
+          <span class="skill-tag">Matplotlib</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-cat">Tools & Frameworks</div>
+        <div class="skill-name">Full-Stack & Tools</div>
+        <div class="skill-tags">
+          <span class="skill-tag">React.js</span>
+          <span class="skill-tag">Flask</span>
+          <span class="skill-tag">NodeJS</span>
+          <span class="skill-tag">Streamlit</span>
+          <span class="skill-tag">Google Colab</span>
+          <span class="skill-tag">Jupyter</span>
+          <span class="skill-tag">Notebook</span>
+          <span class="skill-tag">Gemini API</span>
+          <span class="skill-tag">Vite</span>
+          <span class="skill-tag">VS Code</span>
+          <span class="skill-tag">MS-Office</span>
         </div>
       </div>
       <div class="skill-card reveal">
@@ -924,33 +834,32 @@
           <span class="skill-tag">AWS Educate</span>
           <span class="skill-tag">Oracle Cloud (OCI)</span>
           <span class="skill-tag">Firebase</span>
-          <span class="skill-tag">Docker</span>
-          <span class="skill-tag">Git / GitHub</span>
-          <span class="skill-tag">Linux</span>
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">GitHub</span>
+          <span class="skill-tag">Firebase Cloud Messaging</span>
         </div>
       </div>
       <div class="skill-card reveal">
-        <div class="skill-cat">Frameworks & Tools</div>
-        <div class="skill-name">Full-Stack</div>
+        <div class="skill-cat">Database</div>
+        <div class="skill-name">Data Storage</div>
         <div class="skill-tags">
-          <span class="skill-tag">React.js</span>
-          <span class="skill-tag">Flask</span>
-          <span class="skill-tag">NodeJS</span>
-          <span class="skill-tag">Gemini API</span>
-          <span class="skill-tag">Streamlit</span>
-          <span class="skill-tag">Jupyter</span>
+          <span class="skill-tag">MySQL</span>
+          <span class="skill-tag">Firebase</span>
+          <span class="skill-tag">SQL</span>
         </div>
       </div>
       <div class="skill-card reveal">
         <div class="skill-cat">Soft Skills</div>
         <div class="skill-name">Leadership</div>
         <div class="skill-tags">
-          <span class="skill-tag">Analytical Thinking</span>
-          <span class="skill-tag">Stakeholder Comms</span>
+          <span class="skill-tag">Effective Communication</span>
+          <span class="skill-tag">Teamwork</span>
           <span class="skill-tag">Leadership</span>
           <span class="skill-tag">Problem-Solving</span>
+          <span class="skill-tag">Time Management</span>
           <span class="skill-tag">Adaptability</span>
-          <span class="skill-tag">Attention to Detail</span>
+          <span class="skill-tag">Critical Thinking</span>
+          <span class="skill-tag">Analytical Thinking</span>
         </div>
       </div>
     </div>
@@ -965,16 +874,16 @@
     <div class="exp-card reveal">
       <div class="exp-header">
         <div>
-          <div class="exp-role">AI Engineering Intern</div>
+          <div class="exp-role">Intern</div>
           <div class="exp-company">U2U Systems Pvt. Ltd. · Nagpur</div>
         </div>
         <div class="exp-period">May 2025 – Jul 2025</div>
       </div>
       <ul class="exp-bullets">
-        <li>Built an <strong>AI Resume Matcher</strong> using TF-IDF and BERT embeddings for semantic resume–job profile scoring — a direct product analytics application for recruitment platforms.</li>
-        <li>Designed and optimised <strong>AI Agents</strong> via Q-learning and reinforcement learning, analysing performance metrics to iteratively improve real-time decision-making.</li>
-        <li>Integrated ML pipelines with <strong>REST APIs</strong>, reducing response latency and improving product feature delivery speed.</li>
-        <li>Collaborated on debugging, performance tuning, and module documentation across the AI product stack.</li>
+        <li>Developed and optimised <strong>AI Agents</strong> using Q-learning and reinforcement learning techniques to improve real-time decision-making efficiency.</li>
+        <li>Implemented <strong>TF-IDF and BERT-based embeddings</strong> for intelligent resume–job profile matching in an AI Resume Matcher System.</li>
+        <li>Integrated the model pipeline with <strong>backend APIs</strong> for faster response and semantic similarity search.</li>
+        <li>Worked collaboratively on debugging, performance tuning, and documentation of AI modules.</li>
       </ul>
     </div>
   </div>
@@ -984,15 +893,15 @@
 <section id="projects">
   <div class="section-wrap">
     <div class="section-label">Things I've built</div>
-    <h2 class="section-title reveal">Featured projects</h2>
+    <h2 class="section-title reveal">Academic Projects</h2>
     <div class="projects-grid">
 
       <div class="project-card reveal">
-        <div class="project-num">PROJECT 01</div>
+        <div class="project-num">PROJECT 01 · 2024</div>
         <div class="project-title">Fake Social Media Account Identifier</div>
-        <div class="project-desc">End-to-end AI web app detecting fake social profiles using ML classification and BERT embeddings. Led scoping, data pipeline design, model iteration, and full-stack delivery. Used classification metrics to drive a product analytics feedback loop for feature engineering improvements.</div>
+        <div class="project-desc">Built an AI-based web app to detect fake social media profiles using ML classification and BERT embeddings. Developed the frontend with React, TypeScript & Tailwind CSS, and backend with Flask.</div>
         <div class="project-stack">
-          <span class="stack-tag">Python</span><span class="stack-tag">Scikit-learn</span><span class="stack-tag">BERT</span><span class="stack-tag">Flask</span><span class="stack-tag">React</span><span class="stack-tag">TypeScript</span><span class="stack-tag">Tailwind</span>
+          <span class="stack-tag">Python</span><span class="stack-tag">Scikit-learn</span><span class="stack-tag">Flask</span><span class="stack-tag">React</span><span class="stack-tag">TypeScript</span><span class="stack-tag">Tailwind</span><span class="stack-tag">Vite</span>
         </div>
       </div>
 
@@ -1000,7 +909,7 @@
         <div class="project-num">PROJECT 02</div>
         <div class="project-badge">🏆 SIH 2024 Finalist</div>
         <div class="project-title">Sustainable Fertilizer Usage Optimizer</div>
-        <div class="project-desc">Predictive system recommending fertilizer usage from soil, crop, and weather data using regression and clustering models. Defined KPIs and product requirements with a cross-functional team. Proposed an IoT-integrated real-time web solution for farmers.</div>
+        <div class="project-desc">Developed a predictive system to recommend fertilizer usage using soil, crop, and weather data. Used regression and clustering models; proposed IoT-integrated web solution for farmers.</div>
         <div class="project-stack">
           <span class="stack-tag">Python</span><span class="stack-tag">Pandas</span><span class="stack-tag">Matplotlib</span><span class="stack-tag">Flask</span><span class="stack-tag">Firebase</span>
         </div>
@@ -1010,7 +919,7 @@
         <div class="project-num">PROJECT 03</div>
         <div class="project-badge">🌱 Live / In Progress</div>
         <div class="project-title">AI Crop Health Monitoring System</div>
-        <div class="project-desc">AI-driven crop monitoring platform using satellite imagery and vegetation indices to detect crop stress, identify hotspots, and generate district-level risk analytics. Built spatial analysis modules for hotspot detection and an interactive dashboard with real-time stress maps.</div>
+        <div class="project-desc">AI-driven crop monitoring platform using satellite imagery and vegetation indices to detect crop stress, identify hotspots, and generate district-level risk analytics with interactive dashboards.</div>
         <div class="project-stack">
           <span class="stack-tag">Python</span><span class="stack-tag">Streamlit</span><span class="stack-tag">GeoPandas</span><span class="stack-tag">Rasterio</span><span class="stack-tag">Folium</span><span class="stack-tag">NumPy</span>
         </div>
@@ -1026,10 +935,10 @@
     <div class="section-label">Credentials</div>
     <h2 class="section-title reveal">Certifications</h2>
     <div class="certs-grid">
-      <div class="cert-card reveal"><div class="cert-dot"></div><div><div class="cert-name">OCI 2025 AI Foundations Associate</div><div class="cert-org">Oracle University · 2025</div></div></div>
-      <div class="cert-card reveal"><div class="cert-dot"></div><div><div class="cert-name">OCI 2025 Generative AI Professional</div><div class="cert-org">Oracle University · 2025</div></div></div>
-      <div class="cert-card reveal"><div class="cert-dot"></div><div><div class="cert-name">OCI 2025 Data Science Professional</div><div class="cert-org">Oracle University · 2025</div></div></div>
-      <div class="cert-card reveal"><div class="cert-dot"></div><div><div class="cert-name">GenAI-Powered Data Analytics</div><div class="cert-org">Tata iQ · Forage · 2026</div></div></div>
+      <div class="cert-card reveal"><div class="cert-dot"></div><div><div class="cert-name">OCI 2025 Certified AI Foundations Associate</div><div class="cert-org">Oracle University · 2025</div></div></div>
+      <div class="cert-card reveal"><div class="cert-dot"></div><div><div class="cert-name">OCI Professional: Generative AI</div><div class="cert-org">Oracle University · 2025</div></div></div>
+      <div class="cert-card reveal"><div class="cert-dot"></div><div><div class="cert-name">OCI Professional: Data Science</div><div class="cert-org">Oracle University · 2025</div></div></div>
+      <div class="cert-card reveal"><div class="cert-dot"></div><div><div class="cert-name">GenAI-Powered Data Analytics Virtual Experience</div><div class="cert-org">Tata iQ · Forage · 2026</div></div></div>
       <div class="cert-card reveal"><div class="cert-dot"></div><div><div class="cert-name">Data Analytics Virtual Experience</div><div class="cert-org">Deloitte Australia · Forage · 2026</div></div></div>
       <div class="cert-card reveal"><div class="cert-dot"></div><div><div class="cert-name">Machine Learning Foundations</div><div class="cert-org">AWS Educate · 2025</div></div></div>
       <div class="cert-card reveal"><div class="cert-dot"></div><div><div class="cert-name">Introduction to Generative AI</div><div class="cert-org">AWS Educate · 2025</div></div></div>
@@ -1043,34 +952,34 @@
 <section id="achievements">
   <div class="section-wrap">
     <div class="section-label">Highlights</div>
-    <h2 class="section-title reveal">Achievements &amp; Leadership</h2>
+    <h2 class="section-title reveal">Achievements & Leadership</h2>
     <div class="achievements-grid">
       <div class="achievement-card reveal">
         <div class="ach-icon">🏆</div>
         <div>
           <div class="ach-title">Smart India Hackathon Finalist 2024</div>
-          <div class="ach-desc">Shortlisted nationally for an AI-based sustainable agriculture solution among thousands of teams across India.</div>
+          <div class="ach-desc">Collaborated with a multidisciplinary team to propose a sustainable AI-based solution. Shortlisted nationally among thousands of teams across India.</div>
         </div>
       </div>
       <div class="achievement-card reveal">
         <div class="ach-icon">💻</div>
         <div>
-          <div class="ach-title">TCS CodeVita — Round 1 Qualifier</div>
-          <div class="ach-desc">Qualified among nationwide competitive programmers in one of India's largest coding competitions.</div>
+          <div class="ach-title">TCS CodeVita — Season Round 1 Qualifier</div>
+          <div class="ach-desc">Demonstrated competitive programming skills by clearing the first round among nationwide participants in one of India's largest coding competitions.</div>
         </div>
       </div>
       <div class="achievement-card reveal">
         <div class="ach-icon">🎯</div>
         <div>
           <div class="ach-title">Google Campus Drive Coordinator 2024</div>
-          <div class="ach-desc">Managed lab operations and guided participants through technical rounds during the Google campus recruitment drive.</div>
+          <div class="ach-desc">Managed lab arrangements and guided participants during technical rounds during the Google campus recruitment drive.</div>
         </div>
       </div>
       <div class="achievement-card reveal">
         <div class="ach-icon">📋</div>
         <div>
           <div class="ach-title">College Project Coordinator</div>
-          <div class="ach-desc">Led documentation and presentations across multiple academic projects, demonstrating leadership and communication skills.</div>
+          <div class="ach-desc">Oversaw project documentation and presentation delivery across multiple subjects, demonstrating leadership and communication skills.</div>
         </div>
       </div>
     </div>
@@ -1081,20 +990,19 @@
 <section id="contact">
   <div class="contact-wrap">
     <div class="section-label" style="justify-content:center; margin-bottom:24px;">Let's connect</div>
-    <h2 class="contact-title reveal">Ready to drive<br/><span>product growth?</span></h2>
-    <p class="contact-sub reveal">I'm actively looking for Product Analyst roles where I can turn data into decisions. If you're building something meaningful, let's talk.</p>
+    <h2 class="contact-title reveal">Let's build<br/><span>something great.</span></h2>
+    <p class="contact-sub reveal">I'm actively seeking opportunities to learn, adapt, and add value in a dynamic and growth-oriented environment. Let's talk!</p>
     <div class="contact-links reveal">
-      <a href="mailto:mansisawarkar98@gmail.com" class="contact-link">📧 Email me</a>
+      <a href="mailto:sawarkarm102@gmail.com" class="contact-link">📧 Email me</a>
       <a href="https://www.linkedin.com/in/mansi-sawarkar-058622276" target="_blank" class="contact-link">🔗 LinkedIn</a>
       <a href="https://github.com/sbjitmansi" target="_blank" class="contact-link">🐙 GitHub</a>
       <a href="tel:+919322812158" class="contact-link">📞 +91-9322812158</a>
     </div>
-    <div class="footer-mono reveal">MANSI MUKESH SAWARKAR · PRODUCT ANALYST · NAGPUR, MH · 2025</div>
+    <div class="footer-mono reveal">MANSI MUKESH SAWARKAR · AI & ML ENGINEER · NAGPUR, MH · 2025</div>
   </div>
 </section>
 
 <script>
-  // Custom cursor
   const cursor = document.getElementById('cursor');
   const ring = document.getElementById('cursorRing');
   let mx = 0, my = 0, rx = 0, ry = 0;
@@ -1106,7 +1014,6 @@
     el.addEventListener('mouseleave', () => { cursor.style.width = '10px'; cursor.style.height = '10px'; ring.style.width = '36px'; ring.style.height = '36px'; ring.style.borderColor = 'rgba(0,180,255,0.5)'; });
   });
 
-  // Scroll reveal
   const reveals = document.querySelectorAll('.reveal');
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry, i) => {
@@ -1118,7 +1025,6 @@
   }, { threshold: 0.1 });
   reveals.forEach(el => observer.observe(el));
 
-  // Nav active highlight
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.nav-links a');
   window.addEventListener('scroll', () => {
